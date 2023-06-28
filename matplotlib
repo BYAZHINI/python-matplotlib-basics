@@ -176,16 +176,16 @@ plt.xlabel("NO. OF FEMALE")
 plt.ylabel("AGE GROUP")
 plt.title("AGE GROUP vs FEMALE")
 plt.show()
-'''import matplotlib.pyplot as plt
+import matplotlib.pyplot as plt
 import numpy as np
 x=np.array[[22, 87, 5, 43, 56,
               73, 55, 54, 11,
               20, 51, 5, 79, 31,
               27])]
 plt.hist(x,bins=20)
-plt.show()'''
+plt.show()
 
-'''import matplotlib.pyplot as plt
+import matplotlib.pyplot as plt
 info=['gold','silver','bronze','total']
 australia=[80,59,59,198]
 india=[26,20,20,66]
@@ -264,4 +264,21 @@ plt.barh(x,y,color="pink")
 plt.xlabel("NO. OF FEMALE")
 plt.ylabel("AGE GROUP")
 plt.title("AGE GROUP vs FEMALE")
+plt.show()
+############################################################################################################################################################
+# another program
+import matplotlib.pyplot as plt
+m=["Jammu","Srinagar","Anantnag","Baramula","Kupwara","Badwagam",
+   "Rajouri","Kathuda","Pulwama","Udampur","Punch","Kulgam","Doda",
+   "Bandipore","Samba","Reasi","Ganderbal","Ramban","Shupiyan",
+   "Kishtwar","Kargil","Leh(Ladakh)"]
+q=[50.00,1.40,73.77,81.90,87.97,87.01,91.86,85.45,85.64,80.50,
+   91.90,81.01,92.03,83.34,83.19,91.42,84.19,95.84,93.85,93.56,
+   88.40,65.79]
+plt.bar(m,q,width=0.5,color="green",edgecolor="black")
+plt.xlabel("DISTRICT")
+plt.ylabel("RURAL")
+plt.title("DISTRICT vs RURAL")
+plt.xticks(m,[str(i)for i in a],rotation=90)
+plt.tick_params(axis='x',which='major',labelsize=8)
 plt.show()
