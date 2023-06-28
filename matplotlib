@@ -1,0 +1,267 @@
+import matplotlib.pyplot as plt
+import numpy as np
+x=np.array[[22, 87, 5, 43, 56,
+              73, 55, 54, 11,
+              20, 51, 5, 79, 31,
+              27])]
+plt.hist(x,bins=20)
+plt.show()
+
+import matplotlib.pyplot as plt
+info=['gold','silver','bronze','total']
+australia=[80,59,59,198]
+india=[26,20,20,66]
+plt.bar(info,australia)
+plt.bar(info,india)
+plt.xlabel("medal type")
+plt.ylabel("australia ,india medal count")
+plt.show()
+
+import matplotlib.pyplot as plt
+import numpy as np
+x=np.arange(0,10,0.1)
+a=np.cos(x)
+b=np.sin(x)
+plt.plot(x,a,'b',linewidth=2,linestyle="dashed",markeredgecolor='r')
+plt.plot(x,b,'r')
+plt.show()
+
+import matplotlib.pyplot as plt
+import numpy as np
+math=[12,23,45,56,57,67,72,83,65,47,87,78,28]
+freq,bin,patches=plt.hist(math,bins=10,edgecolor="r",
+                          label="IP Marks")
+plt.title("Performance of students",loc="right")
+plt.xlabel("Marks in Maths")
+plt.ylabel("Number of students")
+plt.legend()
+plt.show()
+
+
+x=[1901,1911,1921,1931,1941,1951,1961,1971,1981,1991,2001,2011]
+y=[2139362,2292535,2424359,2670208,2946728,3253582,3560976,4616632
+   ,5987389,7837051,10143700,12541302]
+plt.bar(x,y,width=5,color="b",edgecolor="r")
+plt.xlabel("YEARS")
+plt.ylabel("POPULATION")
+plt.title("POPULATION OF JAMMU & KASHMIR")
+plt.show()
+
+z=[0,153173,131834,245849,276520,307124,307124,1055656,1370757,1849662,2306649,2397602]
+plt.bar(x,z,width=5,color="b",edgecolor="r")
+plt.xlabel("YEAR")
+plt.ylabel("NET CHANGE")
+plt.title("NET CHANGE IN POPULATION OF JAMMU & KASHMIR")
+plt.show()
+
+a=[0,7.16,5.75,10.14,10.36,10.42,9.44,29.65,29.69,30.89,29.43,23.64]
+plt.bar(x,a,width=5,color='r')
+plt.xlabel("YEARS")
+plt.ylabel("RATE OF CHANGE")
+plt.title("RATE OF GROWTH OF POPULATION")
+plt.show()
+
+b=[0.9,0.91,0.96,0.96,0.92,0.90,0.81,0.84,0.88,0.93,0.99,1.04]
+plt.bar(x,b,width=5,color='b')
+plt.xlabel("YEARS")
+plt.ylabel("CONTRIBUTION TO INDIAN POPULATION")
+plt.title("RATE OF CONTRIBUTION TO INDIAN POPULATION")
+plt.show()
+
+
+c=[4,9,14,19,24,29,34,39,44,49,54,59,64,69,74,79,84,89,94,100]
+d=[763501,746818,744855,640362,603578,584559,495746,441265,387739,311560,255399,172753,173427,102743,97472,43094,37245,11853,8873,2800]
+plt.barh(c,d,color="b",edgecolor="yellow")
+plt.xlabel("NO. OF MALE")
+plt.ylabel("AGE GROUP")
+plt.title("AGE GROUP vs MALE")
+plt.show()
+
+
+x=[4,9,14,19,24,29,34,39,44,49,54,59,64,69,74,79,84,89,94,100,]
+y=[651383,665155,668998,597100,557335,501563,431157,396680,326346,
+   279230,212967,167278,149229,101222,86547,41982,34971,11126,8059,
+   2462]
+plt.barh(x,y,color="pink")
+plt.xlabel("NO. OF FEMALE")
+plt.ylabel("AGE GROUP")
+plt.title("AGE GROUP vs FEMALE")
+plt.show()
+'''import matplotlib.pyplot as plt
+import numpy as np
+x=np.array[[22, 87, 5, 43, 56,
+              73, 55, 54, 11,
+              20, 51, 5, 79, 31,
+              27])]
+plt.hist(x,bins=20)
+plt.show()'''
+
+'''import matplotlib.pyplot as plt
+info=['gold','silver','bronze','total']
+australia=[80,59,59,198]
+india=[26,20,20,66]
+plt.bar(info,australia)
+plt.bar(info,india)
+plt.xlabel("medal type")
+plt.ylabel("australia ,india medal count")
+plt.show()'''
+
+import matplotlib.pyplot as plt
+import numpy as np
+x=np.arange(0,10,0.1)
+a=np.cos(x)
+b=np.sin(x)
+plt.plot(x,a,'b',linewidth=2,linestyle="dashed",markeredgecolor='r')
+plt.plot(x,b,'r')
+plt.show()
+
+import matplotlib.pyplot as plt
+import numpy as np
+math=[12,23,45,56,57,67,72,83,65,47,87,78,28]
+freq,bin,patches=plt.hist(math,bins=10,edgecolor="r",
+                          label="IP Marks")
+plt.title("Performance of students",loc="right")
+plt.xlabel("Marks in Maths")
+plt.ylabel("Number of students")
+plt.legend()
+plt.show()
+
+
+x=[1901,1911,1921,1931,1941,1951,1961,1971,1981,1991,2001,2011]
+y=[2139362,2292535,2424359,2670208,2946728,3253582,3560976,4616632
+   ,5987389,7837051,10143700,12541302]
+plt.bar(x,y,width=5,color="b",edgecolor="r")
+plt.xlabel("YEARS")
+plt.ylabel("POPULATION")
+plt.title("POPULATION OF JAMMU & KASHMIR")
+plt.show()
+
+z=[0,153173,131834,245849,276520,307124,307124,1055656,1370757,1849662,2306649,2397602]
+plt.bar(x,z,width=5,color="b",edgecolor="r")
+plt.xlabel("YEAR")
+plt.ylabel("NET CHANGE")
+plt.title("NET CHANGE IN POPULATION OF JAMMU & KASHMIR")
+plt.show()
+
+a=[0,7.16,5.75,10.14,10.36,10.42,9.44,29.65,29.69,30.89,29.43,23.64]
+plt.bar(x,a,width=5,color='r')
+plt.xlabel("YEARS")
+plt.ylabel("RATE OF CHANGE")
+plt.title("RATE OF GROWTH OF POPULATION")
+plt.show()
+
+b=[0.9,0.91,0.96,0.96,0.92,0.90,0.81,0.84,0.88,0.93,0.99,1.04]
+plt.bar(x,b,width=5,color='b')
+plt.xlabel("YEARS")
+plt.ylabel("CONTRIBUTION TO INDIAN POPULATION")
+plt.title("RATE OF CONTRIBUTION TO INDIAN POPULATION")
+plt.show()
+
+
+c=[4,9,14,19,24,29,34,39,44,49,54,59,64,69,74,79,84,89,94,100]
+d=[763501,746818,744855,640362,603578,584559,495746,441265,387739,311560,255399,172753,173427,102743,97472,43094,37245,11853,8873,2800]
+plt.barh(c,d,color="b",edgecolor="yellow")
+plt.xlabel("NO. OF MALE")
+plt.ylabel("AGE GROUP")
+plt.title("AGE GROUP vs MALE")
+plt.show()
+
+
+x=[4,9,14,19,24,29,34,39,44,49,54,59,64,69,74,79,84,89,94,100,]
+y=[651383,665155,668998,597100,557335,501563,431157,396680,326346,
+   279230,212967,167278,149229,101222,86547,41982,34971,11126,8059,
+   2462]
+plt.barh(x,y,color="pink")
+plt.xlabel("NO. OF FEMALE")
+plt.ylabel("AGE GROUP")
+plt.title("AGE GROUP vs FEMALE")
+plt.show()
+'''import matplotlib.pyplot as plt
+import numpy as np
+x=np.array[[22, 87, 5, 43, 56,
+              73, 55, 54, 11,
+              20, 51, 5, 79, 31,
+              27])]
+plt.hist(x,bins=20)
+plt.show()'''
+
+'''import matplotlib.pyplot as plt
+info=['gold','silver','bronze','total']
+australia=[80,59,59,198]
+india=[26,20,20,66]
+plt.bar(info,australia)
+plt.bar(info,india)
+plt.xlabel("medal type")
+plt.ylabel("australia ,india medal count")
+plt.show()'''
+
+import matplotlib.pyplot as plt
+import numpy as np
+x=np.arange(0,10,0.1)
+a=np.cos(x)
+b=np.sin(x)
+plt.plot(x,a,'b',linewidth=2,linestyle="dashed",markeredgecolor='r')
+plt.plot(x,b,'r')
+plt.show()
+
+import matplotlib.pyplot as plt
+import numpy as np
+math=[12,23,45,56,57,67,72,83,65,47,87,78,28]
+freq,bin,patches=plt.hist(math,bins=10,edgecolor="r",
+                          label="IP Marks")
+plt.title("Performance of students",loc="right")
+plt.xlabel("Marks in Maths")
+plt.ylabel("Number of students")
+plt.legend()
+plt.show()
+
+
+x=[1901,1911,1921,1931,1941,1951,1961,1971,1981,1991,2001,2011]
+y=[2139362,2292535,2424359,2670208,2946728,3253582,3560976,4616632
+   ,5987389,7837051,10143700,12541302]
+plt.bar(x,y,width=5,color="b",edgecolor="r")
+plt.xlabel("YEARS")
+plt.ylabel("POPULATION")
+plt.title("POPULATION OF JAMMU & KASHMIR")
+plt.show()
+
+z=[0,153173,131834,245849,276520,307124,307124,1055656,1370757,1849662,2306649,2397602]
+plt.bar(x,z,width=5,color="b",edgecolor="r")
+plt.xlabel("YEAR")
+plt.ylabel("NET CHANGE")
+plt.title("NET CHANGE IN POPULATION OF JAMMU & KASHMIR")
+plt.show()
+
+a=[0,7.16,5.75,10.14,10.36,10.42,9.44,29.65,29.69,30.89,29.43,23.64]
+plt.bar(x,a,width=5,color='r')
+plt.xlabel("YEARS")
+plt.ylabel("RATE OF CHANGE")
+plt.title("RATE OF GROWTH OF POPULATION")
+plt.show()
+
+b=[0.9,0.91,0.96,0.96,0.92,0.90,0.81,0.84,0.88,0.93,0.99,1.04]
+plt.bar(x,b,width=5,color='b')
+plt.xlabel("YEARS")
+plt.ylabel("CONTRIBUTION TO INDIAN POPULATION")
+plt.title("RATE OF CONTRIBUTION TO INDIAN POPULATION")
+plt.show()
+
+
+c=[4,9,14,19,24,29,34,39,44,49,54,59,64,69,74,79,84,89,94,100]
+d=[763501,746818,744855,640362,603578,584559,495746,441265,387739,311560,255399,172753,173427,102743,97472,43094,37245,11853,8873,2800]
+plt.barh(c,d,color="b",edgecolor="yellow")
+plt.xlabel("NO. OF MALE")
+plt.ylabel("AGE GROUP")
+plt.title("AGE GROUP vs MALE")
+plt.show()
+
+
+x=[4,9,14,19,24,29,34,39,44,49,54,59,64,69,74,79,84,89,94,100,]
+y=[651383,665155,668998,597100,557335,501563,431157,396680,326346,
+   279230,212967,167278,149229,101222,86547,41982,34971,11126,8059,
+   2462]
+plt.barh(x,y,color="pink")
+plt.xlabel("NO. OF FEMALE")
+plt.ylabel("AGE GROUP")
+plt.title("AGE GROUP vs FEMALE")
+plt.show()
